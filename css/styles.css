@@ -20,6 +20,7 @@
   --third-button-color: #f5f4fa;
   --border-color: #eeeeee;
   --bg-icon-color: #f5f4fa;
+  --soc-icon-color: #afb1b8;
 }
 
 /*-------Скриває заголовки----------  */
@@ -165,6 +166,8 @@ p {
   display: flex;
   margin-left: auto;
 }
+
+/* --------------------Icons------------------------- */
 
 .contact-list .icon-mail {
   fill: currentColor;
@@ -403,6 +406,74 @@ p {
 .team img {
   display: block;
 }
+
+/* -----------------------Icons----------------------- */
+
+.workers-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.workers-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.workers-soc-page {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workers-soc-icon {
+  fill: var(--soc-icon-color);
+}
+
+.workers-soc-page:hover {
+  background-color: var(--accent-color);
+}
+
+.workers-soc-page:hover .workers-soc-icon {
+  fill: var(--primary-white-color);
+}
+
+/* .workers-soc-page:hover > svg,
+.workers-soc-page:focus > svg {
+  fill: var(--primary-white-color);
+} */
+
+/* .workers-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.workers-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.workers-soc-link {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.workers-soc-icon {
+  fill: var(--soc-icon-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+} */
+
 /* --------------------------Footer-------------------------- */
 
 .footer-section {
