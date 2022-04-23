@@ -174,6 +174,9 @@ p {
   margin-right: 10px;
   width: 16px;
   height: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .icon-mail:hover,
@@ -429,50 +432,65 @@ p {
   align-items: center;
 }
 
-.workers-soc-icon {
-  fill: var(--soc-icon-color);
-}
-
-.workers-soc-page:hover {
+.workers-soc-page:hover,
+.workers-soc-page:focus {
   background-color: var(--accent-color);
 }
 
-.workers-soc-page:hover .workers-soc-icon {
-  fill: var(--primary-white-color);
-}
-
-/* .workers-soc-page:hover > svg,
-.workers-soc-page:focus > svg {
-  fill: var(--primary-white-color);
-} */
-
-/* .workers-soc-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.workers-soc-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.workers-soc-link {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: tomato;
-  border-radius: 50%;
-}
-
 .workers-soc-icon {
   fill: var(--soc-icon-color);
-  width: 20px;
-  height: 20px;
+}
+
+.workers-soc-page:hover .workers-soc-icon,
+.workers-soc-page:focus .workers-soc-icon {
+  fill: var(--primary-white-color);
+}
+
+/* ------------------Постійні клієнти------------------- */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-link {
   display: flex;
   justify-content: center;
-} */
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-stuff:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--soc-icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
 
 /* --------------------------Footer-------------------------- */
 
@@ -509,6 +527,8 @@ p {
 .footer-address p {
   margin-bottom: 9px;
 }
+
+/* ----------------------------ПРИСОЕДИНЯЙТЕСЬ ICONS-------------------------- */
 
 /* --------------------------Portfolio------------Кнопки-------------- */
 
@@ -548,11 +568,19 @@ p {
 .button-main:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .example-us {
   display: flex;
   flex-wrap: wrap;
+}
+
+.example-us .item:hover,
+.example-us .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-us img {
