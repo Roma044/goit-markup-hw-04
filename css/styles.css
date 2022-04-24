@@ -21,6 +21,7 @@
   --border-color: #eeeeee;
   --bg-icon-color: #f5f4fa;
   --soc-icon-color: #afb1b8;
+  --footer-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 /*-------Скриває заголовки----------  */
@@ -169,7 +170,7 @@ p {
 
 /* --------------------Icons------------------------- */
 
-.contact-list .icon-mail {
+.contact-item .icon-mail {
   fill: currentColor;
   margin-right: 10px;
   width: 16px;
@@ -184,7 +185,7 @@ p {
   fill: var(--accent-color);
 }
 
-.contact-list .icon-phone {
+.contact-item .icon-phone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
@@ -498,6 +499,7 @@ p {
   padding: 60px 0;
   background-color: var(--secondary-background-color);
 }
+
 .logo {
   display: inline-block;
 }
@@ -529,6 +531,55 @@ p {
 }
 
 /* ----------------------------ПРИСОЕДИНЯЙТЕСЬ ICONS-------------------------- */
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer-socials-list {
+  display: flex;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-icon-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  fill: var(--primary-white-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+}
 
 /* --------------------------Portfolio------------Кнопки-------------- */
 
